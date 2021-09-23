@@ -20,4 +20,8 @@ with open("input.txt") as file:
         if check_count(password, letter, start, stop):
             part1_count += 1
 
+        if check_indexes(password, letter, start - 1, stop - 1):
+            part2_count += 1
+
     print("Part 1", part1_count)
+    print("Part 2", part2_count)
